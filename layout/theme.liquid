@@ -214,6 +214,8 @@
     </script>
     {%- endif -%}
   {% capture boostersnippet %}{% include "booster-apps-common" %}{% endcapture %}{% unless boostersnippet contains "Liquid error" %}{{ boostersnippet }}{% endunless %}
+
+  {% render 'shogun-head' %}
 </head>
   <body>
     {{ content_for_layout }}
